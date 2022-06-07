@@ -45,7 +45,9 @@ body {
 .btn span {
   padding-right: 5px;
 }
-
+.btn--top {
+  margin-top: 2rem;
+}
 button > img,
 button > span {
   vertical-align: middle;

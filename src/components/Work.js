@@ -11,7 +11,7 @@ function Work() {
           <div>
             <a href={project.github}>
               <button className="btn">
-                <img src="./images/github.png"></img>
+                <img alt="" src="./images/github.png"></img>
                 View code
               </button>
             </a>

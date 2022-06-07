@@ -2,7 +2,7 @@ import React from "react";
 
 function Landing() {
   return (
-    <div className="landing">
+    <div className="landing" id="landing">
       <div className="container landing__container">
         <div className="landing__content">
           <p>Hi, my name is</p>

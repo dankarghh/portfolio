@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 function Contact() {
   return (
@@ -17,6 +18,11 @@ function Contact() {
         ></textarea>
         <button className="btn">Submit</button>
       </form>
+      <Link to="landing" spy={true} smooth={true} offset={-100} duration={500}>
+        <button className="btn btn--primary btn--top">
+          <span class="material-symbols-outlined">arrow_upward</span>Jump to top
+        </button>
+      </Link>
     </div>
   );
 }

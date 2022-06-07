@@ -1,11 +1,20 @@
 import React from "react";
-import { Link, Scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 function Header() {
   return (
     <div className="header">
       <div className="header__container">
         <ul className="header__links">
+          <Link
+            to="landing"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <li>Home</li>
+          </Link>
           <Link
             to="about"
             spy={true}
