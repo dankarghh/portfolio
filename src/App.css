@@ -1,17 +1,23 @@
 .App {
-  color: #d9cff1;
-  background-color: #1e244d;
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
   /* background-color: #0e112488; */
   font-family: "Inter", sans-serif;
   margin: 0;
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   scroll-behavior: smooth;
 }
 #root {
   scroll-behavior: smooth;
+  --main-bg-color: #252934;
+  /* --main-bg-color: #20242e; */
+  --secondary-bg-color: #19222c;
+  --main-color: #efedf2;
+  --secondary-color: #04c2c9;
 }
 .btn {
   font: inherit;
@@ -19,13 +25,13 @@ body {
   background: none;
   padding: 0.5rem 2rem;
   cursor: pointer;
-  border: solid 1px #d9cff1;
+  border: solid 1px var(--secondary-color);
   border-radius: 5px;
   margin-right: 1rem;
   transition: all 0.3s ease-out;
 }
 .btn:hover {
-  background: #d9cff1dc;
+  background: var(--secondary-color);
   color: #1e244d;
   transform: translate(0, -2px);
 }
@@ -34,7 +40,7 @@ body {
   background: none;
 }
 .btn--primary {
-  background: #d9cff1;
+  background: var(--secondary-color);
 
   color: #1e244d;
 }
@@ -87,7 +93,7 @@ h1 {
   cursor: pointer;
 }
 .header__links li:hover {
-  background-color: #1e244d;
+  background-color: var(--main-bg-color);
 }
 .header__container {
   max-width: 1300px;
@@ -97,10 +103,7 @@ h1 {
   justify-content: flex-end;
 }
 .header {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: flex-end; */
-  background-color: #21173df1;
+  background-color: var(--secondary-bg-color);
   position: fixed;
   width: 100%;
 }
@@ -126,10 +129,10 @@ h1 {
   margin: 1rem 0.3rem;
   font-size: 1.4rem;
   max-width: 800px;
-  color: #c3bfcee8;
+  color: var(--main-color);
 }
 .landing__content-heading--secondary {
-  color: #c3bfce7c;
+  color: var(--secondary-color);
 }
 .about {
   display: flex;
@@ -192,7 +195,7 @@ projects__wrapper {
 }
 .contact__form-input {
   width: 100%;
-  background-color: #11142b;
+  background-color: var(--secondary-bg-color);
   border: none;
   padding: 1rem;
   margin: 5px;
@@ -205,11 +208,11 @@ projects__wrapper {
 }
 .contact__form-input::placeholder {
   font: inherit;
-  color: #d9cff1a8;
+  color: var(--main-color);
   font-size: 14px;
 }
 .contact__form-input--message::placeholder {
-  color: #d9cff1a8;
+  color: var(--main-color);
   font-size: 14px;
   font-family: "Inter", sans-serif;
 }

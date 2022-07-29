@@ -1,9 +1,17 @@
 export const projects = [
   {
+    title: "CRITICS",
+    img: "./images/bigtodo.png",
+    description:
+      "Critics is a social media app made for film/tv critics! Wondering what to watch? What's good? What's not? Just log on to Critics and check out what everyones watching! Complete with critic ratings, comments, and notifications. Built in React using Firebase for the backend..",
+    github: "https://github.com/dankarghh/frenflix",
+    link: "https://frenflix-7206a.web.app/",
+  },
+  {
     title: "Big TODO",
     img: "./images/bigtodo.png",
     description:
-      "This app was built as a learning exercise as part of The Odin Project corruciulum. Truth be told, it is something I wanted to build from early on. I am currently working on building a backend and adding functionality where lists can be shared between users. I have been using this app to keep on top of study and life since.",
+      "Big TODO is an organisation/productivity tool I wanted to build from early on. It was built using react and has been extremely helpful in keeping on top of study and projects. I'm currently working on adding back end functionality so that lists and projects can be shared between users.",
     github: "https://github.com/dankarghh/react-bigtodo",
     link: "https://bigtodo-ls.web.app/",
   },
