@@ -6,7 +6,7 @@ function Work() {
     return (
       <div className="project__project">
         <div className="project__project-info">
-          <h2>{project.title}</h2>
+          <h2 className="project__heading">{project.title}</h2>
           <p>{project.description}</p>
           <div>
             <a href={project.github}>

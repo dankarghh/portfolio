@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "CRITICS",
-    img: "./images/bigtodo.png",
+    img: "./images/critics.png",
     description:
       "Critics is a social media app made for film/tv critics! Wondering what to watch? What's good? What's not? Just log on to Critics and check out what everyones watching! Complete with critic ratings, comments, and notifications. Built in React using Firebase for the backend..",
     github: "https://github.com/dankarghh/frenflix",
