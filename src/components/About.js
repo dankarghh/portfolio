@@ -2,8 +2,8 @@ import React from "react";
 
 function About() {
   return (
-    <div className="container">
-      <h1>About Me</h1>
+    <div className="container about__container">
+      <h1 className="section-heading">About Me</h1>
       <div className="about " id="about">
         <div className="about__info">
           <p>

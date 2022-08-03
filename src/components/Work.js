@@ -34,7 +34,7 @@ function Work() {
   return (
     <div className="projects container" id="work">
       <div className="projects__wrapper">
-        <h1>Projects</h1>
+        <h1 className="section-heading section-heading--projects">Projects</h1>
         <p></p>
         {projectElements}
       </div>
