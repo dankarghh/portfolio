@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 
 function Header() {
+  const [showHeader, setShowHeader] = useState(true);
+
+  useEffect(() => {
+    let scrollPos = 0;
+    window.addEventListener("scroll", function () {
+      if (document.body.getBoundingClientRect().top < scrollPos) {
+        setShowHeader(false);
+      } else {
+        setShowHeader(true);
+      }
+      scrollPos = document.body.getBoundingClientRect().top;
+    });
+    // return () => {
+    //   window.removeEventListener("scroll", function () {
+    //     if (document.body.getBoundingClientRect().top < scrollPos) {
+    //       setShowHeader(false);
+    //     } else {
+    //       setShowHeader(true);
+    //     }
+    //     scrollPos = document.body.getBoundingClientRect().top;
+    //   });
+    // };
+  }, []);
+
   return (
-    <div className="header">
+    <div className={showHeader ? "header" : "hidden"}>
       <div className="header__container">
         <ul className="header__links">
           <Link

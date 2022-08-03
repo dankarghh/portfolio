@@ -112,6 +112,8 @@ h1 {
   background-color: var(--secondary-bg-color);
   position: fixed;
   width: 100%;
+
+  transition: all 0.2s;
 }
 .landing__container {
   background-image: url("./images/geometric.svg");
@@ -306,4 +308,11 @@ projects__wrapper {
   .header__links {
     padding-left: 0;
   }
+}
+
+.hidden {
+  transition: all 0.2s;
+  opacity: 0;
+  height: 0px;
+  /* display: none; */
 }
