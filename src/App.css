@@ -299,6 +299,7 @@ projects__wrapper {
   }
   .section-heading--projects {
     margin-top: 5rem;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 450px) {
@@ -315,4 +316,9 @@ projects__wrapper {
   opacity: 0;
   height: 0px;
   /* display: none; */
+}
+.footer__text {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 0;
 }
