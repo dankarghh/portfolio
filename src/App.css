@@ -309,6 +309,9 @@ projects__wrapper {
   .header__links {
     padding-left: 0;
   }
+  .landing p {
+    font-size: 14px;
+  }
 }
 
 .hidden {
