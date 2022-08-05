@@ -22,17 +22,17 @@ function Header() {
   //   };
   // }, []);
 
-  // useEffect(() => {
-  //   let scrollPos = 0;
-  //   window.addEventListener("scroll", function () {
-  //     if (document.body.getBoundingClientRect().top < scrollPos) {
-  //       setShowHeader(false);
-  //     } else {
-  //       setShowHeader(true);
-  //     }
-  //     scrollPos = document.body.getBoundingClientRect().top;
-  //   });
-  // }, []);
+  useEffect(() => {
+    let scrollPos = 0;
+    window.addEventListener("scroll", function () {
+      if (document.body.getBoundingClientRect().top < scrollPos) {
+        setShowHeader(false);
+      } else {
+        setShowHeader(true);
+      }
+      scrollPos = document.body.getBoundingClientRect().top;
+    });
+  }, []);
 
   return (
     <div className={showHeader ? "header" : "hidden"}>
