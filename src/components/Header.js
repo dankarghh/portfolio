@@ -1,10 +1,39 @@
-import React, {  useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 function Header() {
   // eslint-disable-next-line no-unused-vars
   const [showHeader, setShowHeader] = useState(true);
 
+  // const scrollTracker = scrollPos => {
+  //   // let scrollPos = 0;
+  //   if (document.body.getBoundingClientRect().top < scrollPos) {
+  //     setShowHeader(false);
+  //   } else {
+  //     setShowHeader(true);
+  //   }
+  //   scrollPos = document.body.getBoundingClientRect().top;
+  // };
+
+  // useEffect(() => {
+  //   let scrollPos = 0;
+  //   window.addEventListener("scroll", scrollTracker(scrollPos));
+  //   return () => {
+  //     window.removeEventListener("scroll", scrollTracker);
+  //   };
+  // }, []);
+
+  useEffect(() => {
+    let scrollPos = 0;
+    window.addEventListener("scroll", function () {
+      if (document.body.getBoundingClientRect().top < scrollPos) {
+        setShowHeader(false);
+      } else {
+        setShowHeader(true);
+      }
+      scrollPos = document.body.getBoundingClientRect().top;
+    });
+  }, []);
 
   return (
     <div className={showHeader ? "header" : "hidden"}>
