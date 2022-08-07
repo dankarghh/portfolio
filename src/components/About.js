@@ -13,13 +13,15 @@ function About() {
             free time to mastering the art.
           </p>
           <p>
-            Apart from working and coding, I have a side-hustle building
-            electric guitars; a hobby that stemmed from my love of playing music
-            and tinkering with gadgets. This is partly what lead me to pursue a
-            career that more closely matches my problem solving skills and
-            creativity. I'm now looking for my first dev position where I can
-            take my programming skills to the next level and kick start my new
-            career.
+            Apart from working and coding, I have a side-hustle building{" "}
+            <a href="https://www.instagram.com/blackorchidguitars">
+              electric guitars
+            </a>
+            ; a hobby that stemmed from my love of playing music and tinkering
+            with gadgets. This is partly what lead me to pursue a career that
+            more closely matches my problem solving skills and creativity. I'm
+            now looking for my first dev position where I can take my
+            programming skills to the next level and kick start my new career.
           </p>
         </div>
         <div className="about__img">
