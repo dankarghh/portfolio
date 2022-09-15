@@ -25,7 +25,7 @@ function About() {
           </p>
         </div>
         <div className="about__img">
-          <img src="./images/BCsquare.jpg" alt="profile"></img>
+          <img src="./images/BCcrop.png" alt="profile"></img>
         </div>
       </div>
       <h2 className="about__stack-heading">Technologies I've worked with: </h2>
@@ -47,11 +47,7 @@ function About() {
           <img title="CSS3" src="./images/css-icon.png" alt="css 3 icon" />
         </span>
         <span className="about__stack-item">
-          <img
-            title="Typescript"
-            src="./images/typescript-icon.png"
-            alt="typescript icon"
-          />
+          <img title="VueJS" src="./images/Vue_logo.png" alt="Vue icon" />
         </span>
         <span className="about__stack-item">
           <img
