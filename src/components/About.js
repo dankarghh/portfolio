@@ -50,6 +50,9 @@ function About() {
           <img title="VueJS" src="./images/Vue_logo.png" alt="Vue icon" />
         </span>
         <span className="about__stack-item">
+          <img title="Jira" src="./images/jira-icon.png" alt="Jira icon" />
+        </span>
+        <span className="about__stack-item">
           <img
             title="Firebase"
             src="./images/firebase-icon.png"
